@@ -25,7 +25,7 @@ namespace Tank1990
             StartCoroutine(StartingGame());
             PlayerManager player = FindObjectOfType<PlayerManager>();
             player.OnDeath.AddListener(FinishGame);
-            BaseScript baseScript = FindObjectOfType<BaseScript>();
+            HeadquartersScript baseScript = FindObjectOfType<HeadquartersScript>();
             baseScript.OnDeath.AddListener(FinishGame);
         }
         

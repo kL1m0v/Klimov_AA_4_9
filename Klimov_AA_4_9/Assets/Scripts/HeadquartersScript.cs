@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 namespace Tank1990
 {
-    public class BaseScript : MonoBehaviour
+    public class HeadquartersScript : MonoBehaviour
     {
         public UnityEvent OnDeath;
 

@@ -43,9 +43,9 @@ namespace Tank1990
 			{
 				DestroyMyself();
 			}
-			else if(other.gameObject.TryGetComponent<BaseScript>(out BaseScript baseScript))
+			else if(other.gameObject.TryGetComponent<HeadquartersScript>(out HeadquartersScript headquartersScript))
 			{
-				baseScript.OnDeath?.Invoke();
+				headquartersScript.OnDeath?.Invoke();
 				DestroyMyself();
 			}
 		}
